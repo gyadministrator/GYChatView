@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:padding="6dp">
+
+    <LinearLayout
+        android:id="@+id/right_layout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="end"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/right_msg"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_margin="10dp"
+            android:layout_weight="1"
+            android:background="@drawable/app_lvjian_chat_right"
+            android:padding="10dp"
+            android:text=".创建一个项目，并将两张图片存放到Android studio项目的res目录下的drawable中（我是放在新建的drawable-xhdpi文件夹，因为drawable目录没有指定具体的分辨率，一般不使用放置图片）"
+            tools:ignore="HardcodedText" />
+
+        <ImageView
+            android:id="@+id/iv_right_icon"
+            android:layout_width="24dp"
+            android:layout_height="24dp"
+            android:layout_gravity="end"
+            android:layout_marginEnd="4dp"
+            android:src="@drawable/app_lvjian_message_background" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/left_layout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="start"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:id="@+id/iv_left_icon"
+            android:layout_width="24dp"
+            android:layout_height="24dp"
+            android:layout_marginStart="4dp"
+            android:src="@drawable/app_lvjian_message_background" />
+
+        <TextView
+            android:id="@+id/left_msg"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_margin="10dp"
+            android:background="@drawable/app_lvjian_other_chat_background"
+            android:padding="10dp"
+            android:text=".创建一个项目，并将两张图片存放到Android studio项目的res目录下的drawable中（我是放在新建的drawable-xhdpi文件夹，因为drawable目录没有指定具体的分辨率，一般不使用放置图片）"
+            tools:ignore="HardcodedText" />
+    </LinearLayout>
+</LinearLayout>
